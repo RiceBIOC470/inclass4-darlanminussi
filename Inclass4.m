@@ -1,4 +1,6 @@
-% Darlan Conterno Minussi
+% AW: Looks good. see minor comments below. 1/1.
+
+%Darlan Conterno Minussi
 
 %Inclass assignment 4. Due at the start of class on 9/12/17
 
@@ -6,6 +8,7 @@
 %own line, then 10 lines with 13 random numbers each, then "Random numbers
 %2" on its own line, then 9 lines with 7 random numbers each. 
 
+%AW: should be 10x13 but ok. 
 first_seq = randi(100,13,13);
 second_seq = randi(100,9,7);
 
@@ -33,6 +36,7 @@ fclose(fid);
 %that reads only the first line of random numbers in the file and stores
 %them as numbers in an array. 
 
+%AW: this works fine. don't need to store a separate variable line1 since you don't use it. 
 inclass4 = fopen(filename, 'r');
 line1 = fgetl(inclass4);
 line2 = fgetl(inclass4);
